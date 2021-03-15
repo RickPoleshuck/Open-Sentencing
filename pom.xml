@@ -17,10 +17,6 @@
 	</parent>
 
 	<properties>
-		<java.version>11</java.version>
-		<maven.compiler.source>${java.version}</maven.compiler.source>
-		<maven.compiler.target>${java.version}</maven.compiler.target>
-
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<maven.compiler.source>8</maven.compiler.source>
@@ -193,6 +189,8 @@
 			<artifactId>camel-core</artifactId>
 			<version>3.5.0</version>
 		</dependency>
+
+
 	</dependencies>
 
 	<build>
@@ -206,11 +204,11 @@
 					<packagingExcludes>pom.xml</packagingExcludes>
 				</configuration>
 			</plugin>
-			<!-- <plugin> <groupId>io.swagger</groupId> <artifactId>swagger-codegen-maven-plugin</artifactId>
-				<version>2.3.1</version> <executions> <execution> <goals> <goal>generate</goal>
-				</goals> <configuration> <inputSpec>${project.basedir}/src/main/resources/swagger.yaml</inputSpec>
-				<language>jaxrs</language> <configOptions> <sourceFolder>target/generated-sources/swagger/src/gen/java/main</sourceFolder>
-				<modelPropertyNaming>original</modelPropertyNaming> </configOptions> </configuration>
+			<!-- <plugin> <groupId>io.swagger</groupId> <artifactId>swagger-codegen-maven-plugin</artifactId> 
+				<version>2.3.1</version> <executions> <execution> <goals> <goal>generate</goal> 
+				</goals> <configuration> <inputSpec>${project.basedir}/src/main/resources/swagger.yaml</inputSpec> 
+				<language>jaxrs</language> <configOptions> <sourceFolder>target/generated-sources/swagger/src/gen/java/main</sourceFolder> 
+				<modelPropertyNaming>original</modelPropertyNaming> </configOptions> </configuration> 
 				</execution> </executions> </plugin> -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
